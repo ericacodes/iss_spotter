@@ -1,4 +1,3 @@
-// index.js
 const { nextISSTimesForMyLocation } = require('./iss');
 
 nextISSTimesForMyLocation((error, flyovers) => {
@@ -17,30 +16,31 @@ const printFlyovers = flyovers => {
   }
 };
 
-// fetchMyIP((error, ip) => {
-//   if (error) {
-//     console.log('It didn\'t work!', error);
-//     return;
-//   }
-//   console.log('It worked! Returned IP:' , ip);
+/*
+fetchMyIP((error, ip) => {
+  if (error) {
+    console.log('It didn\'t work!', error);
+    return;
+  }
+  console.log('It worked! Returned IP:' , ip);
 
-//   fetchCoordsByIP(ip, (error, coordsObj) => {
-//     if (error) {
-//       console.log('It didn\'t work!', error);
-//       return;
-//     }
-//     console.log('It worked! Returned Coords:', coordsObj);
+  fetchCoordsByIP(ip, (error, coordsObj) => {
+    if (error) {
+      console.log('It didn\'t work!', error);
+      return;
+    }
+    console.log('It worked! Returned Coords:', coordsObj);
 
-//     fetchISSFlyOverTimes(coordsObj, (error, fly) => {
-//       if (error) {
-//         console.log('It didn\'t work!', error);
-//         return;
-//       }
-//       console.log('It worked! Returned ISS flyover times: \n', fly);
-//       console.log(typeof fly);
-//     });
-//   });
-// });
-
+    fetchISSFlyOverTimes(coordsObj, (error, fly) => {
+      if (error) {
+        console.log('It didn\'t work!', error);
+        return;
+      }
+      console.log('It worked! Returned ISS flyover times: \n', fly);
+      console.log(typeof fly);
+    });
+  });
+});
+*/
 
 
